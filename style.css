@@ -64,13 +64,14 @@ main {
 
 section {
     
+
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(12.5rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(17.625rem, 1fr));
 
     grid-template-rows: repeat(2, 1fr);
     gap: 2rem;
-    width: 70%;
-    margin-block: 2rem;
+    /* height: 50%; */
+    margin: 2rem;
 
 }
 
@@ -160,6 +161,7 @@ img:not(.svg-item) {
 
 .author-info-text p:nth-child(2) {
     font-size: var(--font-x);
+    min-width: 0;
 }
 
 .testimony-heading {
@@ -192,7 +194,7 @@ p {
     position: absolute;
     display: block;
     top: 0;
-    right: 5rem;
+    right: var(--space);
     z-index: -1;
 }
 
