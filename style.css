@@ -66,12 +66,14 @@ section {
     
 
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(17.625rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(12.5rem, 325px));
 
     grid-template-rows: repeat(2, 1fr);
     gap: 2rem;
     /* height: 50%; */
     margin: 2rem;
+    justify-content: center;
+    /* max-width: 1064px; */
 
 }
 
@@ -194,7 +196,7 @@ p {
     position: absolute;
     display: block;
     top: 0;
-    right: var(--space);
+    right: 100px;
     z-index: -1;
 }
 
@@ -217,6 +219,8 @@ blockquote {
     article:nth-child(5) {
         grid-column: auto;
         grid-row: auto;
+        min-width: 250px;
+        
     }
 
     
